@@ -1,0 +1,85 @@
+/* searchScreen.scss */
+
+/* Style the Container */
+.Container {
+    padding: 10px;
+  }
+  
+  /* Style the loading message */
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  /* Style the VideoHorizontal components */
+  .videoHorizontal {
+    display: flex;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  
+    &__left {
+      flex: 1;
+      position: relative;
+    }
+  
+    &__thumbnail {
+      width: 100%;
+    }
+  
+    &__duration {
+      position: absolute;
+      bottom: 0.3rem;
+      right: 0.3rem;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 0.2rem;
+      border-radius: 3px;
+      font-size: 0.8rem;
+    }
+  
+    &__right {
+      flex: 2;
+      padding: 0 1rem;
+  
+      .videoHorizontal__title {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        color: #333;
+      }
+  
+      .videoHorizontal__details {
+        font-size: 0.9rem;
+        color: #666;
+      }
+  
+      .videoHorizontal__channel {
+        display: flex;
+        align-items: center;
+        margin-top: 0.5rem;
+  
+        img {
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          margin-right: 0.5rem;
+          cursor: pointer;
+        }
+  
+        p {
+          font-size: 1rem;
+          font-weight: bold;
+          color: #333;
+          margin: 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  

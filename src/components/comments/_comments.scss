@@ -1,0 +1,60 @@
+// .comments__form{
+//     img{
+//         height:50px;
+//         width:50px;
+//         object-fit:contain;
+
+//     }
+//     input{
+//         background:transparent;
+//         border:none;
+//         border-bottom: 2px solid #353946;
+//         color:#fff;
+//         &:focus{
+//             outline: none;
+//         }
+//     }
+//     button{
+//         background-color: #353946;
+//         color:#fff;
+//         letter-spacing: 0.5px;
+//         &:focus{
+//             border:none;
+//             outline:none;
+//         }
+//     }
+// }
+.comments__form {
+    img {
+        height: 50px;
+        width: 50px;
+        object-fit: contain;
+    }
+
+    input {
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #353946;
+        color: #fff;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        background-color: #353946;
+        color: #fff;
+        letter-spacing: 0.5px;
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
+}
+.rounded-image {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    border-radius: 50%; // Add this line
+}
+

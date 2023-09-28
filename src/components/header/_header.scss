@@ -1,0 +1,142 @@
+@import "../../base.scss";
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 1rem 3 rem;
+    background-color: $black-primary;
+    height:10vh;
+    width: 100%;
+    position: sticky;
+    // top:10vh;
+    left:0;
+    z-index: 999;
+    &__menu{
+        display:none;
+
+    }
+    &__logo{
+        width:30px;
+        height:30px;
+        object-fit: contain;
+        display: block;
+    }
+    form{
+        flex:0.6;
+        display: flex;
+        padding:0.1rem;
+        margin:0 1rem;
+        border-radius: 3px;
+        border:1.2px solid;
+        background-color: $black-secondary;
+        input{
+            width: 100%;
+            border:none;
+            font-weight: 500;
+            background: transparent;
+            padding:0.3rem;
+            color:$text-color;
+            &:focus{
+                outline:none;
+            }
+           
+        }
+        button{
+            padding:0 1.25rem;
+            color:$text-color;
+            background: transparent;
+            border:none;
+            &:focus{
+               border:none;
+            }
+
+                
+        }
+    }
+        &__icons{
+            flex:0.15;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            img {
+                border-radius: 50%;
+                width: 40px;
+                object-fit: contain;
+                margin-left: 5px;
+            }
+          
+        }
+        
+    }
+    .inf{
+        display:flex;
+        flex-direction:row;
+        
+        flex-wrap: wrap;
+
+    }
+    .infi{
+        display:flex;
+        flex-direction:row;
+        
+        flex-wrap: wrap;
+
+    }
+/* Add these styles to your CSS file */
+.skeleton-video {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  
+  .skeleton-theme {
+    color: #343a40;
+    highlight-color: #3c4147;
+  }
+  
+  .skeleton-video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skeleton-video-thumbnail {
+    width: 100%;
+  }
+  
+  .skeleton-video-info {
+    margin: 0.5rem;
+    text-align: center;
+  }
+  
+  .skeleton-video-avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .skeleton-video-title {
+    height: 40px;
+    width: 75%;
+  }
+  
+@media(max-width: $breakpoint-small){
+    .header{
+        padding:1rem;
+        form{
+            flex:1;
+        }
+        &__menu{
+            display:block;
+        }
+        &__logo{
+            display:none;
+        }
+        &__icons>*:not(img){
+            display: none;
+
+        }
+    }
+}
+
