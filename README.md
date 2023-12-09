@@ -1,3 +1,5 @@
+firebase hosted link for this project : https://clone297-942e5.web.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
