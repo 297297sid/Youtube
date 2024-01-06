@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "clone297-942e5"
-  }
+    "default": "clone297-942e5",
+    "staging": "clone297-942e5"
+  },
+  "targets": {},
+  "etags": {}
 }
